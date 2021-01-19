@@ -24,6 +24,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
 
 import io.paperdb.Paper;
 
@@ -32,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
     TextView signUpHere, AdminLink, NotAdminLink, tv_login, merchant_signUp_here;
     EditText et_phone, et_password;
     View view;
+    CountryCodePicker countryCodePicker;
 
 
 
@@ -45,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        countryCodePicker = findViewById(R.id.ccp3);
         AdminLink = findViewById(R.id.admin_panel_link);
 
         checkBoxRememberMe = findViewById(R.id.checkBox_remember_me);
@@ -61,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
         view.setOnClickListener(v -> {
 
             loginButton = new LoginButton(LoginActivity.this, view);
-            String phoneNo = et_phone.getText().toString();
+            String phoneNo = countryCodePicker.getSelectedCountryCodeWithPlus() + et_phone.getText().toString().trim();
             String password = et_password.getText().toString();
 
             if (TextUtils.isEmpty(phoneNo)){

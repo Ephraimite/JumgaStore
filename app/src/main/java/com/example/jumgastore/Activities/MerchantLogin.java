@@ -23,6 +23,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.rilixtech.widget.countrycodepicker.CountryCodePicker;
 
 public class MerchantLogin extends AppCompatActivity {
 
@@ -33,6 +34,7 @@ public class MerchantLogin extends AppCompatActivity {
     private String phone;
     private String password;
 
+    CountryCodePicker countryCodePicker;
     private FirebaseAuth mAuth;
 
     @Override
@@ -42,6 +44,7 @@ public class MerchantLogin extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
+        countryCodePicker = findViewById(R.id.ccp4);
         merchant_signUp_here = findViewById(R.id.signUp_here_merchant);
         et_phone_merchant = findViewById(R.id.login_phone_merchant);
         et_password_merchant = findViewById(R.id.Login_password_merchant);
@@ -50,7 +53,7 @@ public class MerchantLogin extends AppCompatActivity {
         view.setOnClickListener(v -> {
 
             loginButton = new LoginButton(MerchantLogin.this, view);
-            phone = et_phone_merchant.getText().toString();
+            phone = countryCodePicker.getSelectedCountryCodeWithPlus() + et_phone_merchant.getText().toString().trim();
             password = et_password_merchant.getText().toString();
 
             if (TextUtils.isEmpty(phone)) {
