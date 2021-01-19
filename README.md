@@ -15,8 +15,9 @@ I had to make api calls because the rave-android sdk has limitations, I do not w
 After successful creation of account the user is prompted by a dialog box to pay some fees for shop approval.
 After payment the user is not able to login until the admin approves his shop on jumga as seen below.
 
+![image](https://drive.google.com/uc?export=view&id=1183RNPLjy8idXdHISHzOyf1x_oKMuYro)
 
-uc?export=(https://drive.google.com/file/d/1183RNPLjy8idXdHISHzOyf1x_oKMuYro/view?usp=drivesdk "Logo Title Text 1")
+![image](https://drive.google.com/uc?export=view&id=11FxNGRs_iFoBMWT3dET-roeZlQs4bE3L)
 
 When shop is approved and a seller/merchant upload goods to the application, each goods is uploaded with the merchant ID of the merchant who uploaded it.so at check out I loop through the cart items and check which merchant is present in the cart get the SubAccount IDs of those merchants, instantiate the ravePay SubAccount to an Arraylist 
 Pass the the 3 parameters which is ID, splitType(flat) splitValue(itemPrice × 0.1) and pass is to rave pay standard implementation class name (subAccount) from the Android sdk.
