@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Signup_merchant">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Register now...and start selling"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Welcome to jumga seller portal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/signup_merchant_dob"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+        android:inputType="textPersonName"
+        android:hint="Date of Birth"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="@+id/signup_merchant_shopName"
+        app:layout_constraintStart_toStartOf="@+id/signup_merchant_shopName"
+        app:layout_constraintTop_toBottomOf="@+id/signup_merchant_shopName" />
+
+    <EditText
+        android:id="@+id/signup_merchant_shopName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Shop Name "
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/signup_merchant_name"
+        app:layout_constraintStart_toStartOf="@+id/signup_merchant_name"
+        app:layout_constraintTop_toBottomOf="@+id/signup_merchant_name">
+
+
+        <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+            android:id="@+id/ccp2"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="NG"
+            />
+
+        <EditText
+            android:id="@+id/signup_merchant_phone"
+            style="@style/txt_gray_medium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="Phone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textDirection="locale" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/signup_merchant_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="First and Last Name "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/signup_merchant_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        app:layout_constraintEnd_toEndOf="@+id/signup_merchant_dob"
+        app:layout_constraintStart_toStartOf="@+id/signup_merchant_dob"
+        app:layout_constraintTop_toBottomOf="@+id/signup_merchant_dob" />
+
+    <EditText
+        android:id="@+id/signup_merchant_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        app:layout_constraintEnd_toEndOf="@+id/signup_merchant_email"
+        app:layout_constraintStart_toStartOf="@+id/signup_merchant_email"
+        app:layout_constraintTop_toBottomOf="@+id/signup_merchant_email" />
+
+    <EditText
+        android:id="@+id/signup_merchant_retypePassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Retype Password"
+        app:layout_constraintEnd_toEndOf="@+id/signup_merchant_password"
+        app:layout_constraintStart_toStartOf="@+id/signup_merchant_password"
+        app:layout_constraintTop_toBottomOf="@+id/signup_merchant_password" />
+
+    <Button
+        android:id="@+id/signup_merchant_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Continue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.924"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_merchant_retypePassword" />
+</androidx.constraintlayout.widget.ConstraintLayout>

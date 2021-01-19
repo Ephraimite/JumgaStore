@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D6CE15</color>
+    <color name="colorPrimaryDark">#A4A71E</color>
+    <color name="colorAccent">#D6CE15</color>
+    <color name="color_light_green">#90EE90</color>
+    <color name="purple">#7B0B9A</color>
+    <color name="red">#F14533</color>
+    <color name="toquiose">#41BBBE</color>
+    <color name="blue">#3669BD</color>
+
+
+    <color name="gray">#d0505050</color>
+
+
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+</resources>

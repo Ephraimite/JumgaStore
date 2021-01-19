@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/category_t_shirts"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/tshirts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slogan_category" />
+
+    <ImageView
+        android:id="@+id/category_sport_shirt"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/category_female_dresses"
+        app:layout_constraintStart_toEndOf="@+id/category_female_dresses"
+        app:layout_constraintTop_toTopOf="@+id/category_female_dresses"
+        android:src="@drawable/sports" />
+
+    <ImageView
+        android:id="@+id/category_female_dresses"
+        android:layout_width="77dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/category_t_shirts"
+        app:layout_constraintTop_toTopOf="@+id/category_t_shirts"
+        android:src="@drawable/female_dresses" />
+
+    <ImageView
+        android:id="@+id/category_sweaters"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/category_sport_shirt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/category_sport_shirt"
+        app:layout_constraintTop_toTopOf="@+id/category_sport_shirt"
+        android:src="@drawable/sweather" />
+
+
+    <ImageView
+        android:id="@+id/category_glasses"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/glasses"
+        app:layout_constraintEnd_toEndOf="@+id/category_t_shirts"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/category_t_shirts"
+        app:layout_constraintTop_toBottomOf="@+id/category_t_shirts" />
+
+    <ImageView
+        android:id="@+id/category_bags_wallets"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/purses_bags"
+        app:layout_constraintEnd_toEndOf="@+id/category_female_dresses"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="@+id/category_female_dresses"
+        app:layout_constraintTop_toBottomOf="@+id/category_female_dresses" />
+
+    <ImageView
+        android:id="@+id/category_hats_caps"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/hats"
+        app:layout_constraintEnd_toEndOf="@+id/category_sport_shirt"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/category_sport_shirt"
+        app:layout_constraintTop_toBottomOf="@+id/category_sport_shirt" />
+
+
+    <ImageView
+        android:id="@+id/category_shoes"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/shoess"
+        app:layout_constraintEnd_toEndOf="@+id/category_sweaters"
+        app:layout_constraintTop_toBottomOf="@+id/category_sweaters" />
+
+    <ImageView
+        android:id="@+id/category_headphones_handfree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/headphoness"
+        app:layout_constraintEnd_toEndOf="@+id/category_glasses"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/category_glasses"
+        app:layout_constraintTop_toBottomOf="@+id/category_glasses" />
+
+    <ImageView
+        android:id="@+id/category_laptops"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/laptops"
+        app:layout_constraintEnd_toEndOf="@+id/category_bags_wallets"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/category_bags_wallets"
+        app:layout_constraintTop_toBottomOf="@+id/category_bags_wallets" />
+
+    <ImageView
+        android:id="@+id/category_watches"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/watches"
+        app:layout_constraintEnd_toEndOf="@+id/category_hats_caps"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/category_bags_wallets"
+        app:layout_constraintTop_toBottomOf="@+id/category_hats_caps" />
+
+    <ImageView
+        android:id="@+id/category_mobile_phones"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/mobiles"
+        app:layout_constraintEnd_toEndOf="@+id/category_shoes"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toEndOf="@+id/category_hats_caps"
+        app:layout_constraintTop_toBottomOf="@+id/category_shoes" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="T Shirts"
+        app:layout_constraintEnd_toEndOf="@+id/category_t_shirts"
+        app:layout_constraintStart_toStartOf="@+id/category_t_shirts"
+        app:layout_constraintTop_toBottomOf="@+id/category_t_shirts" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="Women Dress"
+        app:layout_constraintEnd_toEndOf="@+id/category_female_dresses"
+        app:layout_constraintStart_toStartOf="@+id/category_female_dresses"
+        app:layout_constraintTop_toBottomOf="@+id/category_female_dresses" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sport Wears"
+        app:layout_constraintEnd_toEndOf="@+id/category_sport_shirt"
+        app:layout_constraintStart_toStartOf="@+id/category_sport_shirt"
+        app:layout_constraintTop_toBottomOf="@+id/category_sport_shirt" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sweathers"
+        app:layout_constraintEnd_toEndOf="@+id/category_sweaters"
+        app:layout_constraintStart_toStartOf="@+id/category_sweaters"
+        app:layout_constraintTop_toBottomOf="@+id/category_sweaters" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Glasses"
+        app:layout_constraintEnd_toEndOf="@+id/category_glasses"
+        app:layout_constraintStart_toStartOf="@+id/category_glasses"
+        app:layout_constraintTop_toBottomOf="@+id/category_glasses" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Bags/wallets"
+        app:layout_constraintEnd_toEndOf="@+id/category_bags_wallets"
+        app:layout_constraintStart_toStartOf="@+id/category_bags_wallets"
+        app:layout_constraintTop_toBottomOf="@+id/category_bags_wallets" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hats"
+        app:layout_constraintEnd_toEndOf="@+id/category_hats_caps"
+        app:layout_constraintStart_toEndOf="@+id/category_bags_wallets"
+        app:layout_constraintStart_toStartOf="@+id/category_hats_caps"
+        app:layout_constraintTop_toBottomOf="@+id/category_hats_caps" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Shoes"
+        app:layout_constraintEnd_toEndOf="@+id/category_shoes"
+        app:layout_constraintStart_toStartOf="@+id/category_shoes"
+        app:layout_constraintTop_toBottomOf="@+id/category_shoes" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Headphone"
+        app:layout_constraintEnd_toEndOf="@+id/category_headphones_handfree"
+        app:layout_constraintStart_toStartOf="@+id/category_headphones_handfree"
+        app:layout_constraintTop_toBottomOf="@+id/category_headphones_handfree" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Laptops"
+        app:layout_constraintEnd_toEndOf="@+id/category_laptops"
+        app:layout_constraintStart_toStartOf="@+id/category_laptops"
+        app:layout_constraintTop_toBottomOf="@+id/category_laptops" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Watches"
+        app:layout_constraintEnd_toEndOf="@+id/category_watches"
+        app:layout_constraintStart_toEndOf="@+id/category_laptops"
+        app:layout_constraintTop_toBottomOf="@+id/category_watches" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Mobile Phones"
+        app:layout_constraintEnd_toEndOf="@+id/category_mobile_phones"
+        app:layout_constraintStart_toStartOf="@+id/category_mobile_phones"
+        app:layout_constraintTop_toBottomOf="@+id/category_mobile_phones" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select your Product Category"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/slogan_category"
+        app:layout_constraintTop_toBottomOf="@+id/slogan_category" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

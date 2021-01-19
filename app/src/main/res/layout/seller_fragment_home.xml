@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.SellerFragmentHome">
+
+    <RelativeLayout
+        android:id="@+id/rll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_uploaded_Produt_Heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uploaded Products"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seller_home_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnav"
+        android:layout_below="@id/rll"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/display_seller_product_home" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_gravity="bottom"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentBottom="true"
+        app:itemIconSize="22dp"
+        app:itemTextColor="@color/colorPrimary"
+        app:menu="@menu/menu" />
+
+
+</RelativeLayout>
