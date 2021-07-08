@@ -24,9 +24,7 @@ Pass the the 3 parameters which is ID, splitType(flat) splitValue(itemPrice × 0
 
 Jumga dispatch rider is hardcoded since jumga has only one delivery company he does business with all I did is add the price of delivery, the split value and added it to the ArrayList I created earlier. Somthing like list.add(deliveryAgent); list.add(SubAccounts);
 
-#### thank you and hoping for the best.
-Download apk in the link below 
-https://drive.google.com/folderview?id=12HZIXKZY4awGC9JxZEj46Z_I42vkxf9A
+
 
 
 
